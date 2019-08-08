@@ -47,7 +47,7 @@ $detector = new VideoTypeDetector();
 
 // Add video detectors
 $detector->addProvider(new DefaultVideoProvider());
-$VideoType = $detector->getVideoTypeFromFile($file);
+$videoType = $detector->getVideoTypeFromFile($file);
 
 // Get the video format
 echo $videoType->getFormat(); // mp4
