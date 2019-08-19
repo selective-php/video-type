@@ -11,7 +11,7 @@ use Selective\VideoType\VideoMimeType;
 /**
  * Test.
  */
-class ImageTypeTest extends TestCase
+class VideoTypeTest extends TestCase
 {
     /**
      * Test.
