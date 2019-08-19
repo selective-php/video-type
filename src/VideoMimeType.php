@@ -9,4 +9,5 @@ final class VideoMimeType
 {
     public const VIDEO_AVI = 'video/avi';
     public const VIDEO_MP4 = 'video/mp4';
+    public const VIDEO_MPEG = 'video/mpeg';
 }

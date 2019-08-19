@@ -34,7 +34,7 @@ class VideoTypeDetectorTest extends TestCase
     /**
      * Test.
      *
-     * @dataProvider providerGetImageTypeFromFile
+     * @dataProvider providerGetVideoTypeFromFile
      *
      * @param string $file The file
      * @param string $format The expected format
@@ -42,7 +42,7 @@ class VideoTypeDetectorTest extends TestCase
      *
      * @return void
      */
-    public function testGetImageTypeFromFile(string $file, string $format, string $mime): void
+    public function testGetVideoTypeFromFile(string $file, string $format, string $mime): void
     {
         $this->assertFileExists($file);
 
@@ -60,10 +60,12 @@ class VideoTypeDetectorTest extends TestCase
      *
      * @return array
      */
-    public function providerGetImageTypeFromFile(): array
+    public function providerGetVideoTypeFromFile(): array
     {
         return [
             [__DIR__ . '/videos/avi.avi', VideoFormat::AVI, VideoMimeType::VIDEO_AVI],
+            [__DIR__ . '/videos/test-mpeg1.mpeg', VideoFormat::MPEG, VideoMimeType::VIDEO_MPEG],
+            [__DIR__ . '/videos/test-mpeg2.mpeg', VideoFormat::MPEG, VideoMimeType::VIDEO_MPEG],
         ];
     }
 
@@ -72,7 +74,7 @@ class VideoTypeDetectorTest extends TestCase
      *
      * @return void
      */
-    public function testGetImageTypeWithUnknownFormat(): void
+    public function testGetVideoTypeWithUnknownFormat(): void
     {
         $this->expectException(VideoTypeDetectorException::class);
         $this->expectExceptionMessage('Video type could not be detected');
