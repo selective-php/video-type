@@ -11,4 +11,5 @@ final class VideoFormat
     public const MP4 = 'mp4';
     public const MPEG = 'mpeg';
     public const MKV = 'mkv';
+    public const WEBM = 'webm';
 }
