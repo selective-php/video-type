@@ -67,7 +67,7 @@ class VideoTypeDetectorTest extends TestCase
             [__DIR__ . '/videos/test-mpeg1.mpeg', VideoFormat::MPEG, VideoMimeType::VIDEO_MPEG],
             [__DIR__ . '/videos/test-mpeg2.mpeg', VideoFormat::MPEG, VideoMimeType::VIDEO_MPEG],
             [__DIR__ . '/videos/test.mp4', VideoFormat::MP4, VideoMimeType::VIDEO_MP4],
-            [__DIR__ . '/videos/test2.mp4', VideoFormat::MP4, VideoMimeType::VIDEO_MP4],
+            [__DIR__ . '/videos/test.mkv', VideoFormat::MKV, VideoMimeType::VIDEO_MKV],
         ];
     }
 
