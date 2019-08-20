@@ -5,6 +5,7 @@ namespace Selective\VideoType\Provider;
 use Selective\VideoType\Detector\AviDetector;
 use Selective\VideoType\Detector\MpegDetector;
 use Selective\VideoType\Detector\Mpeg4Detector;
+use Selective\VideoType\Detector\MkvDetector;
 
 /**
  * All videos formats.
@@ -20,6 +21,7 @@ class DefaultVideoProvider implements ProviderInterface
             new AviDetector(),
             new MpegDetector(),
             new Mpeg4Detector(),
+            new MkvDetector(),
         ];
     }
 }
