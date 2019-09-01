@@ -6,6 +6,7 @@ use Selective\VideoType\Detector\AviDetector;
 use Selective\VideoType\Detector\MpegDetector;
 use Selective\VideoType\Detector\Mpeg4Detector;
 use Selective\VideoType\Detector\MkvDetector;
+use Selective\VideoType\Detector\ThreeGpDetector;
 use Selective\VideoType\Detector\WebMDetector;
 
 /**
@@ -24,6 +25,7 @@ class DefaultVideoProvider implements ProviderInterface
             new Mpeg4Detector(),
             new MkvDetector(),
             new WebMDetector(),
+            new ThreeGpDetector(),
         ];
     }
 }
