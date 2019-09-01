@@ -19,9 +19,11 @@ Video type detection library for PHP.
 ### Supported formats
 
 * **AVI** (Audio Video Interleave)
+* **MKV**
 * **MP4**
 * **MPEG-2**
 * **3GP**
+* **WEBM**
 
 ## Requirements
 
