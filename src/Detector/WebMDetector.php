@@ -22,8 +22,11 @@ final class WebMDetector implements VideoDetectorInterface
     public function detect(SplFileObject $file): ?VideoType
     {
         $bytes = bin2hex((string)$file->fread(4));
-        $containedWebM = strpos((string)$file->fread(40), "webm");
+        $containedWebM = strpos((string)$file->fread(40), 'webm');
 
-        return $bytes === "1a45dfa3" && $containedWebM ? new VideoType(VideoFormat::WEBM, VideoMimeType::VIDEO_WEBM) : null;
+        return $bytes === '1a45dfa3' && $containedWebM ? new VideoType(
+            VideoFormat::WEBM,
+            VideoMimeType::VIDEO_WEBM
+        ) : null;
     }
 }

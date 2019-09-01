@@ -25,6 +25,9 @@ final class MpegDetector implements VideoDetectorInterface
         $binary = (string)$file->fread(1);
         $number = hexdec(bin2hex($binary));
 
-        return $bytes === "\0\0\01" && $number >= 0xb0 && $number <= 0xbf ? new VideoType(VideoFormat::MPEG, VideoMimeType::VIDEO_MPEG) : null;
+        return $bytes === "\0\0\01" && $number >= 0xb0 && $number <= 0xbf ? new VideoType(
+            VideoFormat::MPEG,
+            VideoMimeType::VIDEO_MPEG
+        ) : null;
     }
 }
