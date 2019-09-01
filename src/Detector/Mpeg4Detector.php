@@ -22,8 +22,31 @@ final class Mpeg4Detector implements VideoDetectorInterface
     public function detect(SplFileObject $file): ?VideoType
     {
         $file->fread(4);
-        $bytes = (string)$file->fread(4);
 
-        return $bytes === "ftyp" ? new VideoType(VideoFormat::MP4, VideoMimeType::VIDEO_MP4) : null;
+        // Atom box format
+        // http://fileformats.archiveteam.org/wiki/Boxes/atoms_format
+        $box = (string)$file->fread(4);
+        $brand = (string)$file->fread(4);
+
+        $mp4Brands = [
+            'isom' => 1,
+            'iso2' => 1,
+            'iso3' => 1,
+            'iso4' => 1,
+            'iso5' => 1,
+            'iso6' => 1,
+            'iso7' => 1,
+            'iso8' => 1,
+            'iso9' => 1,
+            'mp41' => 1,
+            'mp42' => 1,
+        ];
+
+        $isMp4Brand = isset($mp4Brands[$brand]);
+
+        return $box === 'ftyp' && $isMp4Brand === true ? new VideoType(
+            VideoFormat::MP4,
+            VideoMimeType::VIDEO_MP4
+        ) : null;
     }
 }
