@@ -22,6 +22,7 @@ Video type detection library for PHP.
 * **MKV**
 * **MP4**
 * **MPEG-2**
+* **OGG** OGV
 * **3G2** 3GPP2
 * **3GP** 3GPP
 * **WEBM**
