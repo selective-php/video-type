@@ -27,6 +27,7 @@ Video type detection library for PHP.
 * **3GP** 3GPP
 * **WEBM**
 * **QuickTime**
+* **WMV** (Windows Media Video)
 
 ## Requirements
 

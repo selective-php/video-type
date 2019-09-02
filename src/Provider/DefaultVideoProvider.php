@@ -11,6 +11,7 @@ use Selective\VideoType\Detector\QuickTimeDetector;
 use Selective\VideoType\Detector\ThreeGp2Detector;
 use Selective\VideoType\Detector\ThreeGpDetector;
 use Selective\VideoType\Detector\WebMDetector;
+use Selective\VideoType\Detector\WmvDetector;
 
 /**
  * All videos formats.
@@ -32,6 +33,7 @@ class DefaultVideoProvider implements ProviderInterface
             new ThreeGpDetector(),
             new ThreeGp2Detector(),
             new QuickTimeDetector(),
+            new WmvDetector(),
         ];
     }
 }

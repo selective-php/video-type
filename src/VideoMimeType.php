@@ -16,4 +16,5 @@ final class VideoMimeType
     public const VIDEO_3GP = 'video/3gpp';
     public const VIDEO_3G2 = 'video/3gpp2';
     public const VIDEO_QUICK_TIME = 'video/quicktime';
+    public const VIDEO_WMV = 'video/x-ms-wmv';
 }

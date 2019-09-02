@@ -73,6 +73,7 @@ class VideoTypeDetectorTest extends TestCase
             [__DIR__ . '/videos/test.3gp', VideoFormat::THREEGP, VideoMimeType::VIDEO_3GP],
             [__DIR__ . '/videos/test.mov', VideoFormat::QUICK_TIME, VideoMimeType::VIDEO_QUICK_TIME],
             [__DIR__ . '/videos/test.ogv', VideoFormat::OGV, VideoMimeType::VIDEO_OGG],
+            [__DIR__ . '/videos/test.wmv', VideoFormat::WMV, VideoMimeType::VIDEO_WMV],
         ];
     }
 
