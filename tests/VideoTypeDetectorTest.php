@@ -74,6 +74,14 @@ class VideoTypeDetectorTest extends TestCase
             [__DIR__ . '/videos/test.mov', VideoFormat::QUICK_TIME, VideoMimeType::VIDEO_QUICK_TIME],
             [__DIR__ . '/videos/test.ogv', VideoFormat::OGV, VideoMimeType::VIDEO_OGG],
             [__DIR__ . '/videos/test.wmv', VideoFormat::WMV, VideoMimeType::VIDEO_WMV],
+          /*  [__DIR__ . '/videos/360 (1).wmv', VideoFormat::WMV, VideoMimeType::VIDEO_WMV],
+            [__DIR__ . '/videos/MerryChristmas.wmv', VideoFormat::WMV, VideoMimeType::VIDEO_WMV],
+            [__DIR__ . '/videos/Video1.WMV', VideoFormat::WMV, VideoMimeType::VIDEO_WMV],
+            [__DIR__ . '/videos/Video2.WMV', VideoFormat::WMV, VideoMimeType::VIDEO_WMV],
+            [__DIR__ . '/videos/Video1.WMV', VideoFormat::WMV, VideoMimeType::VIDEO_WMV],
+            [__DIR__ . '/videos/sample.wmv', VideoFormat::WMV, VideoMimeType::VIDEO_WMV],
+            [__DIR__ . '/videos/Amy&Amethyst.wma', VideoFormat::WMV, VideoMimeType::VIDEO_WMV],
+            [__DIR__ . '/videos/sample.wma', VideoFormat::WMV, VideoMimeType::VIDEO_WMV],*/
         ];
     }
 
