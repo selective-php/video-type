@@ -32,5 +32,6 @@
 *.mkv binary
 *.mpeg binary
 *.webm binary
+*.3g2 binary
 *.3gp binary
 *.mov binary

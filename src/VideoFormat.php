@@ -13,5 +13,6 @@ final class VideoFormat
     public const MKV = 'mkv';
     public const WEBM = 'webm';
     public const THREEGP = '3gp';
+    public const THREEG2 = '3g2';
     public const QUICK_TIME = 'mov';
 }
