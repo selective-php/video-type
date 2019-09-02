@@ -24,6 +24,9 @@ final class MkvDetector implements VideoDetectorInterface
         $bytes = bin2hex((string)$file->fread(4));
         $containedMatroska = strpos((string)$file->fread(46), 'matroska') !== false;
 
-        return $bytes === '1a45dfa3' && $containedMatroska ? new VideoType(VideoFormat::MKV, VideoMimeType::VIDEO_MKV) : null;
+        return $bytes === '1a45dfa3' && $containedMatroska ? new VideoType(
+            VideoFormat::MKV,
+            VideoMimeType::VIDEO_MKV
+        ) : null;
     }
 }
