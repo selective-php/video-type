@@ -28,6 +28,7 @@ Video type detection library for PHP.
 * **WEBM**
 * **QuickTime**
 * **WMV** (Windows Media Video)
+* **FLV** (Adobe Flash Video)
 
 ## Requirements
 

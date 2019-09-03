@@ -3,6 +3,7 @@
 namespace Selective\VideoType\Provider;
 
 use Selective\VideoType\Detector\AviDetector;
+use Selective\VideoType\Detector\FlvDetector;
 use Selective\VideoType\Detector\MpegDetector;
 use Selective\VideoType\Detector\Mpeg4Detector;
 use Selective\VideoType\Detector\MkvDetector;
@@ -34,6 +35,7 @@ class DefaultVideoProvider implements ProviderInterface
             new ThreeGp2Detector(),
             new QuickTimeDetector(),
             new WmvDetector(),
+            new FlvDetector(),
         ];
     }
 }

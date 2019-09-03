@@ -17,4 +17,5 @@ final class VideoFormat
     public const THREEG2 = '3g2';
     public const QUICK_TIME = 'mov';
     public const WMV = 'wmv';
+    public const FLV = 'flv';
 }
