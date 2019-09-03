@@ -7,6 +7,7 @@ use Selective\VideoType\Detector\FlvDetector;
 use Selective\VideoType\Detector\MpegDetector;
 use Selective\VideoType\Detector\Mpeg4Detector;
 use Selective\VideoType\Detector\MkvDetector;
+use Selective\VideoType\Detector\MxfDetector;
 use Selective\VideoType\Detector\OgvDetector;
 use Selective\VideoType\Detector\QuickTimeDetector;
 use Selective\VideoType\Detector\ThreeGp2Detector;
@@ -36,6 +37,7 @@ class DefaultVideoProvider implements ProviderInterface
             new QuickTimeDetector(),
             new WmvDetector(),
             new FlvDetector(),
+            new MxfDetector(),
         ];
     }
 }

@@ -18,4 +18,5 @@ final class VideoMimeType
     public const VIDEO_QUICK_TIME = 'video/quicktime';
     public const VIDEO_WMV = 'video/x-ms-wmv';
     public const VIDEO_FLV = 'video/x-flv';
+    public const VIDEO_MXF = 'application/mxf';
 }

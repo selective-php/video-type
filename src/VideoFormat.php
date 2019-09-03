@@ -18,4 +18,5 @@ final class VideoFormat
     public const QUICK_TIME = 'mov';
     public const WMV = 'wmv';
     public const FLV = 'flv';
+    public const MXF = 'mxf';
 }

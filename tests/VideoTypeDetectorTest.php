@@ -75,6 +75,7 @@ class VideoTypeDetectorTest extends TestCase
             [__DIR__ . '/videos/test.ogv', VideoFormat::OGV, VideoMimeType::VIDEO_OGG],
             [__DIR__ . '/videos/test.wmv', VideoFormat::WMV, VideoMimeType::VIDEO_WMV],
             [__DIR__ . '/videos/test.flv', VideoFormat::FLV, VideoMimeType::VIDEO_FLV],
+            [__DIR__ . '/videos/test.mxf', VideoFormat::MXF, VideoMimeType::VIDEO_MXF],
         ];
     }
 
