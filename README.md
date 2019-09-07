@@ -82,4 +82,4 @@ echo $detector->getVideoTypeFromFile($file)->getFormat();
 
 ## License
 
-* MIT
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
