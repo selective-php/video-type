@@ -58,7 +58,7 @@ class VideoTypeDetectorTest extends TestCase
     /**
      * Provider.
      *
-     * @return array[][] The test data
+     * @return array[] The test data
      */
     public function providerGetVideoTypeFromFile(): array
     {
