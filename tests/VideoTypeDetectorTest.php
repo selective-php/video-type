@@ -63,19 +63,19 @@ class VideoTypeDetectorTest extends TestCase
     public function providerGetVideoTypeFromFile(): array
     {
         return [
-            [__DIR__ . '/videos/avi.avi', VideoFormat::AVI, VideoMimeType::VIDEO_AVI],
-            [__DIR__ . '/videos/test-mpeg1.mpeg', VideoFormat::MPEG, VideoMimeType::VIDEO_MPEG],
-            [__DIR__ . '/videos/test-mpeg2.mpeg', VideoFormat::MPEG, VideoMimeType::VIDEO_MPEG],
-            [__DIR__ . '/videos/test.mp4', VideoFormat::MP4, VideoMimeType::VIDEO_MP4],
-            [__DIR__ . '/videos/test.mkv', VideoFormat::MKV, VideoMimeType::VIDEO_MKV],
-            [__DIR__ . '/videos/test.webm', VideoFormat::WEBM, VideoMimeType::VIDEO_WEBM],
-            [__DIR__ . '/videos/test.3g2', VideoFormat::THREEG2, VideoMimeType::VIDEO_3G2],
-            [__DIR__ . '/videos/test.3gp', VideoFormat::THREEGP, VideoMimeType::VIDEO_3GP],
-            [__DIR__ . '/videos/test.mov', VideoFormat::QUICK_TIME, VideoMimeType::VIDEO_QUICK_TIME],
-            [__DIR__ . '/videos/test.ogv', VideoFormat::OGV, VideoMimeType::VIDEO_OGG],
-            [__DIR__ . '/videos/test.wmv', VideoFormat::WMV, VideoMimeType::VIDEO_WMV],
-            [__DIR__ . '/videos/test.flv', VideoFormat::FLV, VideoMimeType::VIDEO_FLV],
-            [__DIR__ . '/videos/test.mxf', VideoFormat::MXF, VideoMimeType::VIDEO_MXF],
+            'AVI' => [__DIR__ . '/videos/avi.avi', VideoFormat::AVI, VideoMimeType::VIDEO_AVI],
+            'MPEG' => [__DIR__ . '/videos/test-mpeg1.mpeg', VideoFormat::MPEG, VideoMimeType::VIDEO_MPEG],
+            'MPEG 2. file' => [__DIR__ . '/videos/test-mpeg2.mpeg', VideoFormat::MPEG, VideoMimeType::VIDEO_MPEG],
+            'MP4' => [__DIR__ . '/videos/test.mp4', VideoFormat::MP4, VideoMimeType::VIDEO_MP4],
+            'MKV' => [__DIR__ . '/videos/test.mkv', VideoFormat::MKV, VideoMimeType::VIDEO_MKV],
+            'WEBM' => [__DIR__ . '/videos/test.webm', VideoFormat::WEBM, VideoMimeType::VIDEO_WEBM],
+            'THREEG2' => [__DIR__ . '/videos/test.3g2', VideoFormat::THREEG2, VideoMimeType::VIDEO_3G2],
+            'THREEGP' => [__DIR__ . '/videos/test.3gp', VideoFormat::THREEGP, VideoMimeType::VIDEO_3GP],
+            'QUICK_TIME' => [__DIR__ . '/videos/test.mov', VideoFormat::QUICK_TIME, VideoMimeType::VIDEO_QUICK_TIME],
+            'OGV' => [__DIR__ . '/videos/test.ogv', VideoFormat::OGV, VideoMimeType::VIDEO_OGG],
+            'WMV' => [__DIR__ . '/videos/test.wmv', VideoFormat::WMV, VideoMimeType::VIDEO_WMV],
+            'FLV' => [__DIR__ . '/videos/test.flv', VideoFormat::FLV, VideoMimeType::VIDEO_FLV],
+            'MXF' => [__DIR__ . '/videos/test.mxf', VideoFormat::MXF, VideoMimeType::VIDEO_MXF],
         ];
     }
 
