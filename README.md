@@ -21,7 +21,8 @@ Video type detection library for PHP.
 * **AVI** (Audio Video Interleave)
 * **MKV**
 * **MP4**
-* **MPEG-2**
+* **MPEG-1** Part 2
+* **MPEG-2** Part 2
 * **OGG** OGV
 * **3G2** 3GPP2
 * **3GP** 3GPP
