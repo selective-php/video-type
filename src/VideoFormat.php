@@ -19,4 +19,5 @@ final class VideoFormat
     public const WMV = 'wmv';
     public const FLV = 'flv';
     public const MXF = 'mxf';
+    public const REAL_MEDIA = 'rm';
 }

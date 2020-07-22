@@ -14,6 +14,7 @@ use Selective\VideoType\Detector\ThreeGp2Detector;
 use Selective\VideoType\Detector\ThreeGpDetector;
 use Selective\VideoType\Detector\WebMDetector;
 use Selective\VideoType\Detector\WmvDetector;
+use Selective\VideoType\Detector\RealMediaDetector;
 
 /**
  * All videos formats.
@@ -38,6 +39,7 @@ class DefaultVideoProvider implements ProviderInterface
             new WmvDetector(),
             new FlvDetector(),
             new MxfDetector(),
+            new RealMediaDetector(),
         ];
     }
 }
