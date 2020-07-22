@@ -23,6 +23,15 @@ final class AviDetector implements VideoDetectorInterface
     {
         $bytes = (string)$file->fread(4);
 
-        return $bytes === 'RIFF' ? new VideoType(VideoFormat::AVI, VideoMimeType::VIDEO_AVI) : null;
+        // Skip 4 bytes
+        $file->fread(4);
+
+        // Fetch AVI identified data
+        $identifiedData = (string)$file->fread(3);
+
+        return $bytes === 'RIFF' && $identifiedData === 'AVI' ? new VideoType(
+            VideoFormat::AVI,
+            VideoMimeType::VIDEO_AVI
+        ) : null;
     }
 }
