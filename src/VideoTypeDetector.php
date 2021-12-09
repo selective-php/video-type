@@ -31,8 +31,6 @@ final class VideoTypeDetector
      * Add provider.
      *
      * @param ProviderInterface $provider The provider
-     *
-     * @return void
      */
     public function addProvider(ProviderInterface $provider): void
     {
@@ -65,8 +63,6 @@ final class VideoTypeDetector
      * Reads and returns the type of the video.
      *
      * @param SplFileObject $file The video file
-     *
-     * @return VideoType|null
      */
     private function detectFile(SplFileObject $file): ?VideoType
     {

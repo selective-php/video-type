@@ -5,8 +5,8 @@ namespace Selective\VideoType\Test;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 use Selective\VideoType\VideoFormat;
-use Selective\VideoType\VideoType;
 use Selective\VideoType\VideoMimeType;
+use Selective\VideoType\VideoType;
 
 /**
  * Test.
@@ -15,8 +15,6 @@ class VideoTypeTest extends TestCase
 {
     /**
      * Test.
-     *
-     * @return void
      */
     public function testCreateInstance(): void
     {
@@ -28,8 +26,6 @@ class VideoTypeTest extends TestCase
 
     /**
      * Test.
-     *
-     * @return void
      */
     public function testCreateInstanceWithError(): void
     {
@@ -39,8 +35,6 @@ class VideoTypeTest extends TestCase
 
     /**
      * Test.
-     *
-     * @return void
      */
     public function testCreateInstanceWithError2(): void
     {

@@ -3,12 +3,12 @@
 namespace Selective\VideoType\Test;
 
 use PHPUnit\Framework\TestCase;
+use Selective\VideoType\Exception\VideoTypeDetectorException;
+use Selective\VideoType\Provider\DefaultVideoProvider;
 use Selective\VideoType\VideoFormat;
+use Selective\VideoType\VideoMimeType;
 use Selective\VideoType\VideoType;
 use Selective\VideoType\VideoTypeDetector;
-use Selective\VideoType\Exception\VideoTypeDetectorException;
-use Selective\VideoType\VideoMimeType;
-use Selective\VideoType\Provider\DefaultVideoProvider;
 use SplFileObject;
 use SplTempFileObject;
 
@@ -39,8 +39,6 @@ class VideoTypeDetectorTest extends TestCase
      * @param string $file The file
      * @param string $format The expected format
      * @param string $mime The expected mime type
-     *
-     * @return void
      */
     public function testGetVideoTypeFromFile(string $file, string $format, string $mime): void
     {
@@ -58,7 +56,7 @@ class VideoTypeDetectorTest extends TestCase
     /**
      * Provider.
      *
-     * @return array[] The test data
+     * @return array<string, array<mixed>> The test data
      */
     public function providerGetVideoTypeFromFile(): array
     {
@@ -82,8 +80,6 @@ class VideoTypeDetectorTest extends TestCase
 
     /**
      * Test.
-     *
-     * @return void
      */
     public function testGetVideoTypeWithUnknownFormat(): void
     {
