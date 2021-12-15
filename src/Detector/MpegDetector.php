@@ -3,8 +3,8 @@
 namespace Selective\VideoType\Detector;
 
 use Selective\VideoType\VideoFormat;
-use Selective\VideoType\VideoType;
 use Selective\VideoType\VideoMimeType;
+use Selective\VideoType\VideoType;
 use SplFileObject;
 
 /**
@@ -25,7 +25,7 @@ final class MpegDetector implements VideoDetectorInterface
         $binary = (string)$file->fread(1);
         $number = ord($binary);
 
-        return $bytes === "\0\0\01" && $number >= 0xb0 && $number <= 0xbf ? new VideoType(
+        return $bytes === "\0\0\01" && $number >= 0xB0 && $number <= 0xBF ? new VideoType(
             VideoFormat::MPEG,
             VideoMimeType::VIDEO_MPEG
         ) : null;

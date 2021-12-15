@@ -3,8 +3,8 @@
 namespace Selective\VideoType\Detector;
 
 use Selective\VideoType\VideoFormat;
-use Selective\VideoType\VideoType;
 use Selective\VideoType\VideoMimeType;
+use Selective\VideoType\VideoType;
 use SplFileObject;
 
 /**

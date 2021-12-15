@@ -3,8 +3,8 @@
 namespace Selective\VideoType\Detector;
 
 use Selective\VideoType\VideoFormat;
-use Selective\VideoType\VideoType;
 use Selective\VideoType\VideoMimeType;
+use Selective\VideoType\VideoType;
 use SplFileObject;
 
 /**
@@ -23,7 +23,7 @@ final class RealMediaDetector implements VideoDetectorInterface
     {
         $magicNumber = (string)$file->fread(4);
 
-        return $magicNumber === ".RMF" ? new VideoType(
+        return $magicNumber === '.RMF' ? new VideoType(
             VideoFormat::REAL_MEDIA,
             VideoMimeType::VIDEO_REAL_MEDIA
         ) : null;

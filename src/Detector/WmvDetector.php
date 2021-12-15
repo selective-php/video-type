@@ -3,8 +3,8 @@
 namespace Selective\VideoType\Detector;
 
 use Selective\VideoType\VideoFormat;
-use Selective\VideoType\VideoType;
 use Selective\VideoType\VideoMimeType;
+use Selective\VideoType\VideoType;
 use SplFileObject;
 
 /**
@@ -20,7 +20,6 @@ final class WmvDetector implements VideoDetectorInterface
      * https://stackoverflow.com/q/9910313/1461181
      * http://avifile.sourceforge.net/docs.htm
      * https://toolslick.com/conversion/data/guid
-     *
      *
      * @param SplFileObject $file The video file
      *
