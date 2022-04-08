@@ -75,6 +75,7 @@ class VideoTypeDetectorTest extends TestCase
             'FLV' => [__DIR__ . '/videos/test.flv', VideoFormat::FLV, VideoMimeType::VIDEO_FLV],
             'MXF' => [__DIR__ . '/videos/test.mxf', VideoFormat::MXF, VideoMimeType::VIDEO_MXF],
             'REAL_MEDIA' => [__DIR__ . '/videos/test.rm', VideoFormat::REAL_MEDIA, VideoMimeType::VIDEO_REAL_MEDIA],
+            'SWF' => [__DIR__ . '/videos/test.swf', VideoFormat::SWF, VideoMimeType::VIDEO_SWF],
         ];
     }
 
