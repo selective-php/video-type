@@ -11,6 +11,7 @@ use Selective\VideoType\Detector\MxfDetector;
 use Selective\VideoType\Detector\OgvDetector;
 use Selective\VideoType\Detector\QuickTimeDetector;
 use Selective\VideoType\Detector\RealMediaDetector;
+use Selective\VideoType\Detector\SwfDetector;
 use Selective\VideoType\Detector\ThreeGp2Detector;
 use Selective\VideoType\Detector\ThreeGpDetector;
 use Selective\VideoType\Detector\WebMDetector;
@@ -40,6 +41,7 @@ class DefaultVideoProvider implements ProviderInterface
             new FlvDetector(),
             new MxfDetector(),
             new RealMediaDetector(),
+            new SwfDetector(),
         ];
     }
 }

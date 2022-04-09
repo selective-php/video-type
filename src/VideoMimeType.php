@@ -20,4 +20,5 @@ final class VideoMimeType
     public const VIDEO_FLV = 'video/x-flv';
     public const VIDEO_MXF = 'application/mxf';
     public const VIDEO_REAL_MEDIA = 'application/vnd.rn-realmedia';
+    public const VIDEO_SWF = 'application/x-shockwave-flash';
 }
