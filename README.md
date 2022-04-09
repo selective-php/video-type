@@ -28,6 +28,7 @@ Video type detection library for PHP.
 * **3GP** 3GPP
 * **WEBM**
 * **QuickTime**
+* **RealMedia**
 * **WMV** (Windows Media Video)
 * **FLV** (Adobe Flash Video)
 * **MXF** (Material Exchange Format)
