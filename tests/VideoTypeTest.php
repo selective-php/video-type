@@ -2,7 +2,6 @@
 
 namespace Selective\VideoType\Test;
 
-use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 use Selective\VideoType\VideoFormat;
 use Selective\VideoType\VideoMimeType;
@@ -29,7 +28,7 @@ class VideoTypeTest extends TestCase
      */
     public function testCreateInstanceWithError(): void
     {
-        $this->expectException(InvalidArgumentException::class);
+        $this->expectException(\InvalidArgumentException::class);
         new VideoType('', '');
     }
 
@@ -38,7 +37,7 @@ class VideoTypeTest extends TestCase
      */
     public function testCreateInstanceWithError2(): void
     {
-        $this->expectException(InvalidArgumentException::class);
+        $this->expectException(\InvalidArgumentException::class);
         new VideoType(VideoFormat::AVI, '');
     }
 }

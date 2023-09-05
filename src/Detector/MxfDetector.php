@@ -5,7 +5,6 @@ namespace Selective\VideoType\Detector;
 use Selective\VideoType\VideoFormat;
 use Selective\VideoType\VideoMimeType;
 use Selective\VideoType\VideoType;
-use SplFileObject;
 
 /**
  * Detector.
@@ -17,11 +16,11 @@ final class MxfDetector implements VideoDetectorInterface
      *
      * http://fileformats.archiveteam.org/wiki/MXF#Identifiers
      *
-     * @param SplFileObject $file The video file
+     * @param \SplFileObject $file The video file
      *
      * @return VideoType|null The video type
      */
-    public function detect(SplFileObject $file): ?VideoType
+    public function detect(\SplFileObject $file): ?VideoType
     {
         // Search at the end of the file
         $offset = $file->getSize() - 1024;

@@ -5,7 +5,6 @@ namespace Selective\VideoType\Detector;
 use Selective\VideoType\VideoFormat;
 use Selective\VideoType\VideoMimeType;
 use Selective\VideoType\VideoType;
-use SplFileObject;
 
 /**
  * Detector.
@@ -20,11 +19,11 @@ final class ThreeGpDetector implements VideoDetectorInterface
      * - https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=1441
      * - https://tools.ietf.org/html/rfc3839
      *
-     * @param SplFileObject $file The video file
+     * @param \SplFileObject $file The video file
      *
      * @return VideoType|null The video type
      */
-    public function detect(SplFileObject $file): ?VideoType
+    public function detect(\SplFileObject $file): ?VideoType
     {
         $file->fread(4);
 

@@ -22,9 +22,6 @@ use Selective\VideoType\Detector\WmvDetector;
  */
 class DefaultVideoProvider implements ProviderInterface
 {
-    /**
-     * {@inheritdoc}
-     */
     public function getDetectors(): array
     {
         return [

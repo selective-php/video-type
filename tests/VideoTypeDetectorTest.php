@@ -9,8 +9,6 @@ use Selective\VideoType\VideoFormat;
 use Selective\VideoType\VideoMimeType;
 use Selective\VideoType\VideoType;
 use Selective\VideoType\VideoTypeDetector;
-use SplFileObject;
-use SplTempFileObject;
 
 /**
  * Test.
@@ -45,7 +43,7 @@ class VideoTypeDetectorTest extends TestCase
         $this->assertFileExists($file);
 
         $detector = $this->createDetector();
-        $file = new SplFileObject($file);
+        $file = new \SplFileObject($file);
         $actual = $detector->getVideoTypeFromFile($file);
 
         $this->assertSame($format, $actual->getFormat());
@@ -89,7 +87,7 @@ class VideoTypeDetectorTest extends TestCase
 
         $imageTypeDetector = new VideoTypeDetector();
 
-        $image = new SplTempFileObject();
+        $image = new \SplTempFileObject();
         $image->fwrite('temp');
 
         $imageTypeDetector->getVideoTypeFromFile($image);

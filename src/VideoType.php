@@ -2,8 +2,6 @@
 
 namespace Selective\VideoType;
 
-use InvalidArgumentException;
-
 /**
  * Video type value object.
  */
@@ -28,11 +26,11 @@ final class VideoType
     public function __construct(string $format, string $mime)
     {
         if (empty($format)) {
-            throw new InvalidArgumentException(sprintf('Invalid type: %s', $format));
+            throw new \InvalidArgumentException(sprintf('Invalid type: %s', $format));
         }
 
         if (empty($mime)) {
-            throw new InvalidArgumentException(sprintf('Invalid mime type: %s', $format));
+            throw new \InvalidArgumentException(sprintf('Invalid mime type: %s', $format));
         }
 
         $this->format = $format;
@@ -68,7 +66,7 @@ final class VideoType
      */
     public function equals(VideoType $other): bool
     {
-        return $this->format === $other->format &&
-            $this->mime === $other->mime;
+        return $this->format === $other->format
+            && $this->mime === $other->mime;
     }
 }

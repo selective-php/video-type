@@ -5,7 +5,6 @@ namespace Selective\VideoType;
 use Selective\VideoType\Detector\VideoDetectorInterface;
 use Selective\VideoType\Exception\VideoTypeDetectorException;
 use Selective\VideoType\Provider\ProviderInterface;
-use SplFileObject;
 
 /**
  * Video type detection.
@@ -42,13 +41,13 @@ final class VideoTypeDetector
     /**
      * Detect video type.
      *
-     * @param SplFileObject $file The video file
+     * @param \SplFileObject $file The video file
      *
      * @throws VideoTypeDetectorException
      *
      * @return VideoType The video type
      */
-    public function getVideoTypeFromFile(SplFileObject $file): VideoType
+    public function getVideoTypeFromFile(\SplFileObject $file): VideoType
     {
         $type = $this->detectFile($file);
 
@@ -62,9 +61,9 @@ final class VideoTypeDetector
     /**
      * Reads and returns the type of the video.
      *
-     * @param SplFileObject $file The video file
+     * @param \SplFileObject $file The video file
      */
-    private function detectFile(SplFileObject $file): ?VideoType
+    private function detectFile(\SplFileObject $file): ?VideoType
     {
         foreach ($this->detectors as $detector) {
             $file->rewind();

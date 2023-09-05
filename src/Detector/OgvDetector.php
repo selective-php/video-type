@@ -5,7 +5,6 @@ namespace Selective\VideoType\Detector;
 use Selective\VideoType\VideoFormat;
 use Selective\VideoType\VideoMimeType;
 use Selective\VideoType\VideoType;
-use SplFileObject;
 
 /**
  * Detector.
@@ -18,11 +17,11 @@ final class OgvDetector implements VideoDetectorInterface
      * https://xiph.org/ogg/
      * https://tools.ietf.org/html/rfc5334
      *
-     * @param SplFileObject $file The video file
+     * @param \SplFileObject $file The video file
      *
      * @return VideoType|null The video type
      */
-    public function detect(SplFileObject $file): ?VideoType
+    public function detect(\SplFileObject $file): ?VideoType
     {
         $bytes = (string)$file->fread(4);
 
