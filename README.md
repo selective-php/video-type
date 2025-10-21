@@ -35,7 +35,7 @@ Video type detection library for PHP.
 
 ## Requirements
 
-* PHP 7.2+
+* PHP 8.1 - 8.4
 
 ## Installation
 
