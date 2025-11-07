@@ -3,15 +3,14 @@
          bootstrap="vendor/autoload.php"
          colors="true"
          backupGlobals="false"
-         backupStaticAttributes="false"
-         timeoutForLargeTests="900"
-         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/12.5/phpunit.xsd"
+    >
     <testsuites>
         <testsuite name="Tests">
             <directory suffix="Test.php">tests</directory>
         </testsuite>
     </testsuites>
-    <coverage processUncoveredFiles="false">
+    <source>
         <include>
             <directory suffix=".php">src</directory>
         </include>
@@ -19,5 +18,5 @@
             <directory>vendor</directory>
             <directory>build</directory>
         </exclude>
-    </coverage>
+    </source>
 </phpunit>

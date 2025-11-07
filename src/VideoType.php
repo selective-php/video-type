@@ -68,7 +68,7 @@ final class VideoType
      */
     public function equals(VideoType $other): bool
     {
-        return $this->format === $other->format &&
-            $this->mime === $other->mime;
+        return $this->format === $other->format
+            && $this->mime === $other->mime;
     }
 }

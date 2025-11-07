@@ -2,6 +2,7 @@
 
 namespace Selective\VideoType\Test;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Selective\VideoType\Exception\VideoTypeDetectorException;
 use Selective\VideoType\Provider\DefaultVideoProvider;
@@ -34,12 +35,11 @@ class VideoTypeDetectorTest extends TestCase
     /**
      * Test.
      *
-     * @dataProvider providerGetVideoTypeFromFile
-     *
      * @param string $file The file
      * @param string $format The expected format
      * @param string $mime The expected mime type
      */
+    #[DataProvider('providerGetVideoTypeFromFile')]
     public function testGetVideoTypeFromFile(string $file, string $format, string $mime): void
     {
         $this->assertFileExists($file);
@@ -58,7 +58,7 @@ class VideoTypeDetectorTest extends TestCase
      *
      * @return array<string, array<mixed>> The test data
      */
-    public function providerGetVideoTypeFromFile(): array
+    public static function providerGetVideoTypeFromFile(): array
     {
         return [
             'AVI' => [__DIR__ . '/videos/avi.avi', VideoFormat::AVI, VideoMimeType::VIDEO_AVI],
